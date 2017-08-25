@@ -1,0 +1,20 @@
+{
+  "name": "theatre-group",
+  "description": "an app to keep track of the members of a local theatre group",
+  "main": "",
+  "authors": [
+    "Larry <larryjamestaylor@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
