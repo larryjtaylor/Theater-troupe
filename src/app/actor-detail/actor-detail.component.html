@@ -1,8 +1,16 @@
 <div class="container">
-  <h2>{{(actorToDisplay | async).name}}</h2>
-  <img src="{{(actorToDisplay | async).image}}">
-  <h4>{{(actorToDisplay | async).range}}</h4>
-  <p>{{(actorToDisplay | async).phone}}</p>
-  <p>{{(actorToDisplay | async).address}}</p>
-  <p>{{(actorToDisplay | async).email}}</p>
+  <div class="well">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>{{(actorToDisplay | async).name}}</h2>
+        <img src="{{(actorToDisplay | async).image}}" class='headshot'>
+      </div>
+      <div class="col-md-6" id='details'>
+        <p>{{(actorToDisplay | async).range}}</p>
+        <p>{{(actorToDisplay | async).phone}}</p>
+        <p>{{(actorToDisplay | async).address}}</p>
+        <p>{{(actorToDisplay | async).email}}</p>
+      </div>
+    </div>
+  </div>
 </div>
