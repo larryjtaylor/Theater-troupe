@@ -5,6 +5,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { ActorsComponent } from './actors/actors.component';
 import { ActorDetailComponent }   from './actor-detail/actor-detail.component';
 import { AdminComponent } from './admin/admin.component';
+import { ContactComponent } from './contact/contact.component';
 
 const appRoutes: Routes = [
   {
@@ -26,6 +27,10 @@ const appRoutes: Routes = [
   {
     path: 'admin',
     component: AdminComponent
+  },
+  {
+    path: 'contact',
+    component: ContactComponent
   }
 ];
 

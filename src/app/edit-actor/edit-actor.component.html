@@ -10,15 +10,19 @@
 
 <label>New Address:</label>
 <input [(ngModel)]="selectedActor.address">
+<br>
 
 <label>New Email:</label>
 <input [(ngModel)]="selectedActor.email">
+<br>
 
 <label>New Vocal Type:</label>
 <input [(ngModel)]="selectedActor.range">
+<br>
 
 <label>New Headshot URL:</label>
 <input [(ngModel)]="selectedActor.image">
+<br><br>
 
 <button (click)="beginUpdatingActor(selectedActor)">Update</button>
 <button (click)="beginDeletingActor(selectedActor)">Delete</button>
