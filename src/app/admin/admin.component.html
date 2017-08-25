@@ -1,0 +1,43 @@
+<div class='panel panel-default'>
+  <div class="panel-heading">
+    <h3>Add New Actor to the Repertory</h3>
+  </div>
+  <div class='panel-body'>
+    <div>
+      <label>Name:</label>
+      <br>
+      <input #newName>
+    </div>
+
+    <div>
+      <label>Phone Number:</label>
+      <br>
+      <input #newPhone>
+    </div>
+
+    <div>
+      <label>Address:</label>
+      <br>
+      <input #newAddress>
+    </div>
+
+    <div>
+      <label>Email:</label>
+      <br>
+      <input #newEmail>
+    </div>
+
+    <div>
+      <label>Vocal Range Type:</label>
+      <br>
+      <input #newRange>
+    </div>
+
+    <div>
+      <label>Headshot URL:</label>
+      <br>
+      <input #newImage>
+    </div>
+    <button (click)="submitForm(newName.value, newPhone.value, newAddress.value, newEmail.value, newRange.value, newImage.value); newName.value=''; newPhone.value=''; newAddress.value=''; newEmail.value=''; newRange.value=''; newImage.value='';">Add</button>
+  </div>
+</div>

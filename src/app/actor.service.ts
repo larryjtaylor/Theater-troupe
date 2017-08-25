@@ -15,11 +15,11 @@ export class ActorService {
       return this.actors;
     }
 
+  addActor(newActor: Actor) {
+    this.actors.push(newActor);
+  }
+
   getActorById(actorId: string){
-    for (var i = 0; i <= ACTORS.length - 1; i++) {
-      if (ACTORS[i].id === actorId) {
-        return ACTORS[i];
-      }
-    }
+    return this.database.object('actors/' + actorId);
   }
 }

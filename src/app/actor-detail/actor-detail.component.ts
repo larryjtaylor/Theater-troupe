@@ -3,6 +3,8 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { Actor } from '../actor.model';
 import { ActorService } from '../actor.service';
+import { FirebaseObjectObservable } from 'angularfire2/database';
+
 
 @Component({
   selector: 'app-actor-detail',
@@ -13,7 +15,7 @@ import { ActorService } from '../actor.service';
 })
 export class ActorDetailComponent implements OnInit {
   actorId: string;
-  actorToDisplay: Actor;
+  actorToDisplay;
 
   constructor(private route: ActivatedRoute, private location: Location, private actorService: ActorService) { }
 

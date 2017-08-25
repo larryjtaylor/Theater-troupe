@@ -19,7 +19,7 @@ export class ActorsComponent implements OnInit {
     this.actors = this.actorService.getActors();
   }
 
-  goToDetailPage(clickedActor: Actor) {
-     this.router.navigate(['actors', clickedActor.id]);
+  goToDetailPage(clickedActor) {
+    this.router.navigate(['actors', clickedActor.$key]);
    };
 }
