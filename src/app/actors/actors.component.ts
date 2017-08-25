@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Actor } from '../actor.model';
 import { Router } from '@angular/router';
 import { ActorService } from '../actor.service';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-actors',
@@ -10,7 +11,7 @@ import { ActorService } from '../actor.service';
   providers: [ActorService]
 })
 export class ActorsComponent implements OnInit {
-  actors: Actor[];
+  actors: FirebaseListObservable<any[]>;
 
   constructor(private router: Router, private actorService: ActorService) { }
 

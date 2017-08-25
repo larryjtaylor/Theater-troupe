@@ -1,6 +1,6 @@
 <h1>Actor List:</h1>
 
-<div *ngFor="let actor of actors" (click)="goToDetailPage(actor)" class="panel panel-default">
+<div *ngFor="let actor of actors | async" (click)="goToDetailPage(actor)" class="panel panel-default">
   <div class='panel panel-heading'>
     <h3>{{actor.name}}</h3>
   </div>

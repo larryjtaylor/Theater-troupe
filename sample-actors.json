@@ -1,0 +1,33 @@
+{ "actors": [{
+    "name": "Shelley Duvall",
+    "phone": "395-862-0844",
+    "address": "1423 NE Chester Dr., Malibu, CA 90213",
+    "email": "heresjohnny@yahoo.com",
+    "range": "soprano",
+    "image": "https://images.moviepilot.com/image/upload/c_fill,h_470,q_auto:good,w_620/m8scgy5bkdxsjaydgpmr.jpg",
+    "id": "1"
+  }, {
+    "name": "Mike Keaton",
+    "phone": "842-504-5062",
+    "address": "8394 SW Waterloo Ave., Culver City, CA 90223",
+    "email": "noimbatman@gmail.com",
+    "range": "baritone",
+    "image": "http://dl9fvu4r30qs1.cloudfront.net/98/03/4136adcd480aab5619375f0e9826/keaton-2.jpg",
+    "id": "2"
+  }, {
+    "name": "Whoopie Goldberg",
+    "phone": "394-802-3405",
+    "address": " 42843 NW Richington Blvd., Beverly Hills, CA 90210",
+    "email": "suckmyegot@gmail.com",
+    "range": "alto",
+    "image": "http://timothywhite.com/sites/default/files/images/portfolio/whoopie_goldberg-00089.jpg?height=80%",
+    "id": "3"
+  }, {
+    "name": "David Schwimmer",
+    "phone": "340-382-9854",
+    "address": "2453 SW Oak st., Apt 4G, Ventura, CA 92849",
+    "email": "pivooottt@msn.com",
+    "range": "tenor", "image":"https://i.pinimg.com/736x/86/22/6f/86226f8fb5844e8810f00acec04d2051--celebrity-yearbook-photos-yearbook-pictures.jpg",
+    "id": "4"
+  }]
+}
