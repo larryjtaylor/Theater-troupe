@@ -22,4 +22,14 @@ export class ActorService {
   getActorById(actorId: string){
     return this.database.object('actors/' + actorId);
   }
+
+  updateActor(localUpdatedActor){
+    var actorEntryInFirebase = this.getActorById(localUpdatedActor.$key);
+    actorEntryInFirebase.update({name: localUpdatedActor.name,
+                                phone: localUpdatedActor.phone,
+                                address: localUpdatedActor.address,
+                                email: localUpdatedActor.email,
+                                range: localUpdatedActor.range,
+                                image: localUpdatedActor.image});
+  }
 }

@@ -1,10 +1,20 @@
 <h1>Actor List:</h1>
 
-<div *ngFor="let actor of actors | async" (click)="goToDetailPage(actor)" class="panel panel-default">
+<div *ngFor="let actor of actors | async" class="panel panel-default">
   <div class='panel-heading'>
-    <h3>{{actor.name}}</h3>
+    <h3 (click)="goToDetailPage(actor)">{{actor.name}}</h3>
   </div>
   <div class="panel-body">
     <img src={{actor.image}}>
+  </div>
+  <div *ngIf="currentRoute === '/admin'">
+    <!-- <div class'container'> -->
+      {{actor.phone}}<br>
+      {{actor.address}}<br>
+      {{actor.email}}<br>
+      {{actor.range}}
+    <!-- </div> -->
+    <hr>
+    <app-edit-actor [selectedActor]='actor'></app-edit-actor>
   </div>
 </div>

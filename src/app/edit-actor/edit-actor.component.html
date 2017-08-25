@@ -1,0 +1,23 @@
+<h4>Edit Actor</h4>
+
+<label>New Name:</label>
+<input [(ngModel)]="selectedActor.name">
+<br>
+
+<label>New Phone:</label>
+<input [(ngModel)]="selectedActor.phone">
+<br>
+
+<label>New Address:</label>
+<input [(ngModel)]="selectedActor.address">
+
+<label>New Email:</label>
+<input [(ngModel)]="selectedActor.email">
+
+<label>New Vocal Type:</label>
+<input [(ngModel)]="selectedActor.range">
+
+<label>New Headshot URL:</label>
+<input [(ngModel)]="selectedActor.image">
+
+<button (click)="beginUpdatingActor(selectedActor)">Update</button>
