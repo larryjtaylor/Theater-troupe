@@ -17,6 +17,12 @@ export class EditActorComponent implements OnInit {
   ngOnInit() {
   }
   beginUpdatingActor(actorToUpdate){
-      this.actorService.updateActor(actorToUpdate);
+    this.actorService.updateActor(actorToUpdate);
+  }
+
+  beginDeletingActor(actorToDelete){
+    if(confirm("Are you sure you want to delete this actor from the repertory?")){
+      this.actorService.deleteActor(actorToDelete);
     }
+  }
 }

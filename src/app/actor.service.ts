@@ -32,4 +32,9 @@ export class ActorService {
                                 range: localUpdatedActor.range,
                                 image: localUpdatedActor.image});
   }
+
+  deleteActor(localActorToDelete){
+    var actorEntryInFirebase = this.getActorById(localActorToDelete.$key);
+    actorEntryInFirebase.remove();
+  }
 }
