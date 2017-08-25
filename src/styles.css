@@ -67,3 +67,12 @@ html {
 #title {
   margin-left:  25%;
 }
+
+.footLinks {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.bio {
+  font-size: 18px;
+}

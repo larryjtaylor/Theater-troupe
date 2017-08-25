@@ -6,6 +6,7 @@ import { ActorsComponent } from './actors/actors.component';
 import { ActorDetailComponent }   from './actor-detail/actor-detail.component';
 import { AdminComponent } from './admin/admin.component';
 import { ContactComponent } from './contact/contact.component';
+import { ArtisticTeamComponent } from './artistic-team/artistic-team.component';
 
 const appRoutes: Routes = [
   {
@@ -31,6 +32,10 @@ const appRoutes: Routes = [
   {
     path: 'contact',
     component: ContactComponent
+  },
+  {
+    path: 'artistic-team',
+    component: ArtisticTeamComponent
   }
 ];
 

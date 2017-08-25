@@ -15,6 +15,7 @@ import { ActorDetailComponent } from './actor-detail/actor-detail.component';
 import { AdminComponent } from './admin/admin.component';
 import { EditActorComponent } from './edit-actor/edit-actor.component';
 import { ContactComponent } from './contact/contact.component';
+import { ArtisticTeamComponent } from './artistic-team/artistic-team.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -32,7 +33,8 @@ export const firebaseConfig = {
     ActorDetailComponent,
     AdminComponent,
     EditActorComponent,
-    ContactComponent
+    ContactComponent,
+    ArtisticTeamComponent
   ],
   imports: [
     BrowserModule,
