@@ -1,10 +1,21 @@
 # TheatreGroup
 
+_Angular Project for Epicodus, 08/25/2017_
+
+By _Larry Taylor_
+
+## Description
+This web application was created to show the members of the Theatre Company 5th Wall Productions. It uses Firebase to hold all information about the actors, and allows users to browse through to see their details. It also allows the administrator to add new actors, edit the current actors, or delete an actor from the group.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
-## Development server
+## Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* In your terminal, clone the project directory and install the necessary depencendies with the following commands:
+  * `git clone https://github.com/larryjtaylor/Theater-troupe.git`
+  * `cd Theater-troupe`
+  * `npm install`
+  * `bower install`
+  * `ng build`
 
 ## Online database
 
@@ -25,9 +36,13 @@ In terminal, run `npm install angularfire2@4.0.0-rc.0 firebase --save` to instal
  * databaseURL: "https://xxxx.firebaseio.com",
  * storageBucket: "xxxx.appspot.com",
  * messagingSenderId: "xxxx"
-###### };
+ ###### };
 
 Finally, add `"types": [ "firebase" ]` to the tsconfig.json file at the end before the final two curly braces.
+
+## Development server
+
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
@@ -49,3 +64,13 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Technologies Used
+
+Angular 2 CLI, Firebase, TypeScript, Node.js, Bower, Bootstrap, CSS, HTML
+
+## License
+
+Copyright &copy; 2017 Larry Taylor
+
+This software is licensed under the MIT license.

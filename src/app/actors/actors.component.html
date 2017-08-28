@@ -2,7 +2,7 @@
 
 <div *ngFor="let actor of actors | async" class="panel panel-default" id='actorPanel'>
   <div class='panel-heading'>
-    <h3 (click)="goToDetailPage(actor)">{{actor.name}}</h3>
+    <h3 (click)="goToDetailPage(actor)" id='name'>{{actor.name}}</h3>
   </div>
   <div class="panel-body">
     <img src={{actor.image}} (click)="goToDetailPage(actor)" class='headshot'>

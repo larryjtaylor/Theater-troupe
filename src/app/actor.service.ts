@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Actor } from './actor.model';
-import { ACTORS } from './mock-actors';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 
 @Injectable()
