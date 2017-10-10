@@ -44,6 +44,39 @@ Finally, add `"types": [ "firebase" ]` to the tsconfig.json file at the end befo
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+##  Program Preview
+![Home Page Preview](screenshots/home.png)
+_Home Page_
+
+![Admin Add](screenshots/admin_add.png)
+_The administrator can add new actors to the company._
+
+![Actor List](screenshots/actor_list.png)
+_All actors' name and headshots are listed on Actors page._
+
+![Actor](screenshots/actor.png)
+_User can click on an actor to go to their individual information page._
+
+![Admin Update](screenshots/update.png)
+_Administrator can update or remove an actor._
+
+![Artistic Team](screenshots/artistic_team.png)
+_User can view bios of the artistic team._
+
+![About](screenshots/about.png)
+_User can view info about the company._
+
+![contact](screenshots/contact.png)
+_User can contact the company administrator._
+
+## Production build
+
+Deployed project can be viewed at https://theatre-group.firebaseapp.com/
+
+## Known bugs
+
+As of now, the deployed site will not display images that are local to the project. It displays images from URLs just fine, but any image saved in firebase directly won't show.
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
